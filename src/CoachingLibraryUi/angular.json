@@ -120,6 +120,46 @@
           }
         }
       }
+    },
+    "DevallishComponents": {
+      "root": "projects/devallish-components",
+      "sourceRoot": "projects/devallish-components/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/devallish-components/tsconfig.lib.json",
+            "project": "projects/devallish-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/devallish-components/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/devallish-components/src/test.ts",
+            "tsConfig": "projects/devallish-components/tsconfig.spec.json",
+            "karmaConfig": "projects/devallish-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/devallish-components/tsconfig.lib.json",
+              "projects/devallish-components/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "CoachingLibraryUi"

@@ -3,7 +3,15 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@cl/*": ["app/*"]
+      "@cl/*": [
+        "app/*"
+      ],
+      "DevallishComponents": [
+        "dist/devallish-components"
+      ],
+      "DevallishComponents/*": [
+        "dist/devallish-components/*"
+      ]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
