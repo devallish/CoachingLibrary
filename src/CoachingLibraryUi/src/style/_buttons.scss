@@ -1,0 +1,44 @@
+@import './theme';
+@import './padding-margins';
+
+%button-shared {
+  border: none;
+  padding: $standard-padding;
+  cursor: pointer;
+}
+
+@mixin setButtonColours ($background-colour, $foreground-colour) {
+  background-color: $background-colour;
+  color: $foreground-colour;
+  &:hover {
+    background-color: lighten($background-colour, 5%);
+  }
+  &:active {
+    background-color: darken($background-colour, 5%);
+  }
+}
+
+button {
+  @extend %button-shared;
+  @include setButtonColours($default-colour, $default-text-colour)
+}
+button.info {
+  @extend %button-shared;
+  @include setButtonColours($info-colour, $info-text-colour)
+}
+button.success {
+  @extend %button-shared;
+  @include setButtonColours($success-colour, $success-text-colour);
+}
+button.warning {
+  @extend %button-shared;
+  @include setButtonColours($warning-colour, $warning-text-colour);
+}
+button.danger {
+  @extend %button-shared;
+  @include setButtonColours($danger-colour, $danger-text-colour);
+}
+button.error {
+  @extend %button-shared;
+  @include setButtonColours($error-colour, $error-text-colour);
+}

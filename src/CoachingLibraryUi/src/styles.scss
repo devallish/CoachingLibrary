@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/normalize.css/normalize.css';
+@import './style/padding-margins';
+@import './style/buttons';
+@import './style/theme';
+
+html {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background-color: $content-colour;
+  color: $content-text-colour;
+}

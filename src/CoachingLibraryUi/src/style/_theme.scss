@@ -1,0 +1,22 @@
+// Use on top level components and content.
+$primary-colour: #292929;
+$secondary-colour: #0000ff;
+$primary-text-colour: #ebebeb;
+$secondary-text-colour: white;
+$content-colour: #eeeeee;
+$content-text-colour: #1d1d1d;
+
+
+// Use on components such as buttons and cards..
+$info-colour: $secondary-colour;
+$info-text-colour: $secondary-text-colour;
+$success-colour: #017201;
+$success-text-colour: white;
+$warning-colour: #df8a01;
+$warning-text-colour: white;
+$error-colour: darkred;
+$error-text-colour: white;
+$danger-colour: $error-colour;
+$danger-text-colour: $error-text-colour;
+$default-colour: darken($content-colour, 15%);
+$default-text-colour: $content-text-colour;
