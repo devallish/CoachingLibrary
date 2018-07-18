@@ -1,0 +1,27 @@
+@import '../../../../style/theme';
+@import '../../../../style/spacings';
+
+.card-container {
+  background-color: $content-colour;
+  color: $content-text-colour;
+  border: 2px solid $primary-colour;
+}
+.card-header-container {
+  background-color: $primary-colour;
+  color: $primary-text-colour;
+  padding: $standard-padding;
+  h4 {
+    margin: 0;
+  }
+}
+.card-body-container {
+  padding: $standard-padding;
+}
+.card-footer-container {
+  background-color: $primary-colour;
+  color: $primary-text-colour;
+  padding: $standard-padding;
+  h4 {
+    margin: 0;
+  }
+}

@@ -1,6 +1,6 @@
 // Use on top level components and content.
 $primary-colour: #292929;
-$secondary-colour: #0000ff;
+$secondary-colour: #1c7007;
 $primary-text-colour: #ebebeb;
 $secondary-text-colour: white;
 $content-colour: #eeeeee;
@@ -20,3 +20,7 @@ $danger-colour: $error-colour;
 $danger-text-colour: $error-text-colour;
 $default-colour: darken($content-colour, 15%);
 $default-text-colour: $content-text-colour;
+
+$primary-90-colour: lighten($primary-colour, 10%);
+$primary-80-colour: lighten($primary-colour, 20%);
+$primary-70-colour: lighten($primary-colour, 30%);

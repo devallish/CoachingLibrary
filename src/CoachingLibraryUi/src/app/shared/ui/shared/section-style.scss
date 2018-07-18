@@ -1,0 +1,21 @@
+@import '../../../../style/theme';
+@import '../../../../style/spacings';
+
+.section-container {
+  padding: $x-large-padding;
+}
+
+// .content-container {
+//   padding: 10px;
+// }
+.content-container {
+  background-color: $content-colour;
+  color: $content-text-colour;
+  overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .section-container {
+    padding: $x-small-padding;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="card-container">
+  <div class="card-header-container">
+    <h4>{{headerText}}</h4>
+  </div>
+  <div class="card-body-container">
+    <ng-content select=".card-body"></ng-content>
+  </div>
+  <div class="card-body-container">
+    <ng-content select=".card-body-alt"></ng-content>
+  </div>
+  <div class="card-footer-container">
+    <h4>{{footerText}}</h4>
+  </div>
+</div>

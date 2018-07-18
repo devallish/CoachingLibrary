@@ -1,0 +1,28 @@
+$x-small-y: 0.1em;
+$x-small-x: 0.3em;
+
+$small-y: 0.3em;
+$small-x: 0.5em;
+
+$standard-y: 0.5em;
+$standard-x: 0.75em;
+
+$large-y: 0.75em;
+$large-x: 1em;
+
+$x-large-y: 1em;
+$x-large-x: 3em;
+
+// used
+$x-small-padding: $x-small-y $x-small-x;
+$small-padding: $small-y $small-x;
+// used
+$standard-padding: $standard-y $standard-x;
+$large-padding: $large-y $large-x;
+// used
+$x-large-padding: $x-large-y $x-large-x;
+
+.remove-padding-y {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
