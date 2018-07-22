@@ -1,4 +1,4 @@
-import { LandingPageModule } from './landing-page.module';
+import { LandingPageModule } from '@cl/landing-page/landing-page.module';
 
 describe('LandingPageModule', () => {
   let landingPageModule: LandingPageModule;

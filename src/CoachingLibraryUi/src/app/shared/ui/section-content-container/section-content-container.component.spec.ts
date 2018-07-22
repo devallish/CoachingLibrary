@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SectionContentContainerComponent } from './section-content-container.component';
+import { SectionContentContainerComponent } from '@cl/shared/ui/section-content-container/section-content-container.component';
 
 describe('SectionContentContainerComponent', () => {
   let component: SectionContentContainerComponent;

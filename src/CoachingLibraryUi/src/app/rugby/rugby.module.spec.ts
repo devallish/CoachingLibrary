@@ -1,4 +1,4 @@
-import { RugbyModule } from './rugby.module';
+import { RugbyModule } from '@cl/rugby/rugby.module';
 
 describe('RugbyModule', () => {
   let rugbyModule: RugbyModule;

@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SwimmingSessionPlansComponent } from './swimming-session-plans.component';
+import { SwimmingSessionPlansComponent } from '@cl/swimming/swimming-session-plans/swimming-session-plans.component';
 
 describe('SwimmingSessionPlansComponent', () => {
   let component: SwimmingSessionPlansComponent;

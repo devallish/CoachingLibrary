@@ -1,4 +1,4 @@
-import { SwimmingModule } from './swimming.module';
+import { SwimmingModule } from '@cl/swimming/swimming.module';
 
 describe('SwimmingModule', () => {
   let swimmingModule: SwimmingModule;

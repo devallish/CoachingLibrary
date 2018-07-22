@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SwimmingComponent } from './swimming.component';
+import { SwimmingComponent } from '@cl/swimming/swimming/swimming.component';
 
 describe('SwimmingComponent', () => {
   let component: SwimmingComponent;

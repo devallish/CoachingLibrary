@@ -1,9 +1,17 @@
 <div class="main-navbar">
   <a [routerLink]="['/']"
      routerLinkActive="active"
-     [routerLinkActiveOptions]="{ exact: true }"><i class="fas fa-home"></i><span>Home</span></a>
+     [routerLinkActiveOptions]="{ exact: true }">
+     <i class="fas fa-home"></i><span>Home</span>
+  </a>
   <a [routerLink]="['/swimming']"
      routerLinkActive="active"
-     [routerLinkActiveOptions]="{ exact: true }"><i class="fas fa-swimmer"></i><span>Swimming</span></a>
-  <a><i class="fas fa-football-ball"></i><span>Rugby</span></a>
+     [routerLinkActiveOptions]="{ exact: true }">
+     <i class="fas fa-swimmer"></i><span>Swimming</span>
+  </a>
+  <a [routerLink]="['/rugby']"
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">
+     <i class="fas fa-football-ball"></i><span>Rugby</span>
+  </a>
 </div>

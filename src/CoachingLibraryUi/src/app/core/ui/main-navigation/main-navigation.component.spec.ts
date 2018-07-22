@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainNavigationComponent } from './main-navigation.component';
+import { MainNavigationComponent } from '@cl/core/ui/main-navigation/main-navigation.component';
 
 describe('MainNavigationComponent', () => {
   let component: MainNavigationComponent;

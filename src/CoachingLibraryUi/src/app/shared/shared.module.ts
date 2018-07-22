@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardComponent } from './ui/card/card.component';
-import { SectionContainerComponent } from './ui/section-container/section-container.component';
-import { SectionContentContainerComponent } from './ui/section-content-container/section-content-container.component';
+import { CardComponent } from '@cl/shared/ui/card/card.component';
+import { SectionContainerComponent } from '@cl/shared/ui/section-container/section-container.component';
+import { SectionContentContainerComponent } from '@cl/shared/ui/section-content-container/section-content-container.component';
 
 
 @NgModule({

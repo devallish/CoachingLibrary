@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 
-import { CoreModule } from './core/core.module';
-import { AppRoutingModule } from './app-routing.module';
+import { CoreModule } from '@cl/core/core.module';
+import { AppRoutingModule } from '@cl/app-routing.module';
 
-import { AppComponent } from './app.component';
-import { LandingPageModule } from './landing-page/landing-page.module';
+import { AppComponent } from '@cl/app.component';
+import { LandingPageModule } from '@cl/landing-page/landing-page.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    AppRoutingModule,
     CoreModule,
+    AppRoutingModule,
     LandingPageModule
   ],
   providers: [],

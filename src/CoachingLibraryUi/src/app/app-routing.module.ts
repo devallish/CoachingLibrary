@@ -4,7 +4,8 @@ import { LandingPageComponent } from '@cl/landing-page/landing-page/landing-page
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
-  { path: 'swimming', loadChildren: './swimming/swimming.module#SwimmingModule' }
+  { path: 'swimming', loadChildren: './swimming/swimming.module#SwimmingModule' },
+  { path: 'rugby', loadChildren: './rugby/rugby.module#RugbyModule' }
 ];
 
 @NgModule({
