@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SharedModule } from '@cl/shared/shared.module';
 import { RugbyRoutingModule } from '@cl/rugby/rugby-routing.module';
@@ -8,6 +9,7 @@ import { RugbyPlayerAssessmentsComponent } from '@cl/rugby/rugby-player-assessme
 @NgModule({
   imports: [
     SharedModule,
+    FormsModule,
     RugbyRoutingModule
   ],
   declarations: [RugbyComponent, RugbyPlayerAssessmentsComponent]

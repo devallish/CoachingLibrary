@@ -1,0 +1,42 @@
+@import '../../../style/theme';
+@import '../../../style/spacings';
+
+.outer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.menu-container {
+  background-color: $primary-40-colour;
+  // flex-grow: 1;
+    
+  a {
+    border-right: 0.5em;
+    border-right-color: transparent;
+    border-right-style: solid;
+    color: $content-text-colour;
+    text-align: left;
+    text-decoration:  none;
+    font-size: 1.1em;
+    display: block;
+    padding: $standard-padding;
+    margin-bottom: 0.1em;
+    // transition: background-color 0.7s;
+  }
+  a:hover {
+    background-color: $secondary-colour;
+    color: $primary-text-colour;
+  }
+  a.active {
+    background-color: $secondary-colour;
+    color: $primary-text-colour;
+  }
+}
+.content-container {
+  flex: 1 0 auto;
+  background-color: $primary-30-colour;
+  padding: $standard-padding;
+}

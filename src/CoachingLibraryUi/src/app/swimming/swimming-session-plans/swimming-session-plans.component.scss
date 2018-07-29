@@ -1,0 +1,27 @@
+@import '../../../style/theme';
+@import '../../../style/spacings';
+
+table {
+  border-collapse: collapse;
+}
+thead {
+  tr {
+    background-color: $secondary-colour;
+  }
+}
+tbody {
+  tr {
+    background-color: $primary-40-colour;
+  }
+  tr.odd {
+    background-color: $content-colour;
+  }
+}
+th {
+  text-align: left;
+}
+th, td {
+  padding: $standard-padding;
+  border-left: 0;
+  border-right: 0;
+}

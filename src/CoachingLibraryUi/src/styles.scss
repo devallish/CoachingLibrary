@@ -26,3 +26,12 @@ h1, h2, h3, h4, h5 {
 .primary-lighten-2-background {
   background-color: $primary-80-colour;
 }
+
+.text-container {
+  padding-left: $standard-x;
+  padding-right: $standard-x;
+}
+
+.button-container {
+  margin-bottom: $standard-y;
+}

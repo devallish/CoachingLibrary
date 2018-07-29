@@ -7,3 +7,8 @@ export const getSessionPlans = createSelector(
   getSwimmingFeatureState,
   state => state.sessionPlans,
 );
+
+export const getSectionTitle = createSelector(
+  getSwimmingFeatureState,
+  state => state.sectionTitle
+);

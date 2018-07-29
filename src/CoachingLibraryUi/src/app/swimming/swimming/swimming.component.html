@@ -1,3 +1,22 @@
 <app-section-content-container>
-  <router-outlet></router-outlet>
+  <div class="text-container">
+    <h1>{{sectionTitle}}</h1>
+  </div>
+  <div class="outer-container">
+    <div class="menu-container">
+      <a [routerLink]="['/swimming']"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }">
+         Session Plans
+      </a>
+      <a [routerLink]="['/swimming/new']"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }">
+         Swimmer Profiles
+      </a>
+    </div>
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </app-section-content-container>

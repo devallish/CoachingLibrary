@@ -14,11 +14,15 @@ import * as fromAppSelectors from '@cl/core/state/app.selectors';
 export class AppComponent implements OnInit, OnDestroy {
 
   title: string;
+  somethings: Array<string>;
 
   private subscriptions: Subscription;
 
   constructor(private stateStore: Store<AppState>) {
     this.subscriptions = new Subscription();
+    this.somethings = new Array<string>();
+    this.somethings.push('First');
+    this.somethings.push('Second');
   }
 
   ngOnInit() {

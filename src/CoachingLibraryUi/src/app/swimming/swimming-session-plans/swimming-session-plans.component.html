@@ -1,3 +1,20 @@
-<p>
-  swimming-session-plans works!
-</p>
+<div class="button-container">
+  <button type="button" class="info">Create New</button>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sessionPlan of sessionPlans; let odd = odd"
+        [class.odd]="odd">
+      <td><a [routerLink]="['/swimming', sessionPlan.id]" >{{sessionPlan.name}}</a></td>
+      <td>{{sessionPlan.description}}</td>
+      <td>22 May 2018</td>
+    </tr>
+  </tbody>
+</table>

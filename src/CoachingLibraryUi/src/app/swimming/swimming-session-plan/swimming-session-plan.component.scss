@@ -1,0 +1,18 @@
+.fields-container {
+  display: flex;
+  flex-flow: column;
+}
+.field {
+  display: flex;
+  flex-flow: row;
+  background-color: orange;
+
+  label {
+    flex: 0 0 20%;
+    background-color: pink;
+  }
+  input {
+    flex: 1 0 auto;
+    background-color: greenyellow;
+  }
+}

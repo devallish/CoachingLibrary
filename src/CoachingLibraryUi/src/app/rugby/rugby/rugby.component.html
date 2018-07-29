@@ -1,4 +1,10 @@
 <app-section-content-container>
   <router-outlet></router-outlet>
+  <editor [(ngModel)]="mceEditorContent"></editor>
+  <div class="content">{{mceEditorContent}}</div>
+  <div [innerHTML]="mceEditorContent"></div>
+  <div class="content">
+    <p [innerHTML]="mceEditorContent"></p>
+  </div>
 </app-section-content-container>
   

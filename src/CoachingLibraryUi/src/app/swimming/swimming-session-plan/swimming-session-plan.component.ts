@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-swimming-session-plan',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SwimmingSessionPlanComponent implements OnInit {
 
-  constructor() { }
+  sessionForm: FormGroup;
+
+  constructor() {
+    this.sessionForm = new FormGroup({
+      name: new FormControl(''),
+      descirption: new FormControl('')
+    });
+  }
 
   ngOnInit() {
   }

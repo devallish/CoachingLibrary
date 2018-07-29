@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RugbyComponent implements OnInit {
 
+  mceEditorContent: any;
+
   constructor() { }
 
   ngOnInit() {

@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SharedModule } from '@cl/shared/shared.module';
-import { StoreModule, ActionReducerMap } from '@ngrx/store';
+import { StoreModule } from '@ngrx/store';
 
 import { SwimmingRoutingModule } from '@cl/swimming/swimming-routing.module';
 import { SwimmingComponent } from '@cl/swimming/swimming/swimming.component';
@@ -13,10 +15,16 @@ import { swimmingStateReducer } from '@cl/swimming/state/swimming.state.reducer'
 
 @NgModule({
   imports: [
+    CommonModule,
     SharedModule,
     SwimmingRoutingModule,
-    StoreModule.forFeature('swimming', swimmingStateReducer)
+    StoreModule.forFeature('swimming', swimmingStateReducer),
+    FormsModule,
+    ReactiveFormsModule
   ],
-  declarations: [SwimmingComponent, SwimmingSessionPlansComponent, SwimmingSessionPlanComponent]
+  declarations: [
+    SwimmingComponent,
+    SwimmingSessionPlansComponent,
+    SwimmingSessionPlanComponent]
 })
 export class SwimmingModule { }

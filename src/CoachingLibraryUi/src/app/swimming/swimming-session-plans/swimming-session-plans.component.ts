@@ -1,9 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { SwimmingStateContainer } from '@cl/swimming/state/swimming-state';
+
 import { Store, select } from '@ngrx/store';
+
 import { Subscription } from 'rxjs/internal/Subscription';
-import * as fromSwimmingSelectors from '@cl/swimming/state/swimming.selectors';
+
+import { SwimmingStateContainer } from '@cl/swimming/state/swimming-state';
 import { SessionPlan } from '@cl/swimming/state/model/session-plan';
+import * as fromSwimmingSelectors from '@cl/swimming/state/swimming.selectors';
 
 @Component({
   selector: 'app-swimming-session-plans',
